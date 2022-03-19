@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!-- stylesheet link-->
+      <link rel="stylesheet" href="style.css"> 
+
+  <!-- Font icons -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Attendence Report</title>
+</head>
+
+<body>
+
+  <div class="container-fluid bg-primary">
+    <div class="container ">
+      <p class="fs-1 text-center text-light"> Welcome to Attendence Mgt System </p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light  bg-primary bg-opacity-25">
+    <div class="container-fluid ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand px-2 fs-5.5 fw-bolder" href="#">IAMR Group Of Institutions</a>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+        <ul class="navbar-nav nav-pills me-auto mb-1 mb-lg-0  ">
+          <li class="nav-item ">
+            <a class="nav-link text-dark fs-5 fw-bolder " aria-current="page" href="Home.html">
+              <i class="fa fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder " href="student.html"> <i class="fa fa-users"></i>
+              Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder " href="Attendence.html"> <i class="fa fa-pencil-square-o"></i>
+              Attendence</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder " href="course.html"> <i class="fa fa-book"></i> Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder " href="department.html"> <i class="fa fa-building"></i>
+              Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder " href="users.html"> <i class="fa fa-user"></i> Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fs-5 fw-bolder active " href="Report.html"> <i
+                class="fa fa-exclamation-circle"></i>
+              Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5 fw-bolder" href="index.html"> <i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 btn-outline-info " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex flex-row-reverse mx-5 my-4 bd-highlight">
+    <div class=" bd-highlight">
+      <button class="btn btn-outline-success" type="submit">Go</button>
+    </div>
+
+    <div class=" mx-3 bd-highlight">
+      <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Select year level
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">1</a></li>
+          <li><a class="dropdown-item" href="#">2</a></li>
+          <li><a class="dropdown-item" href="#">3</a></li>
+          <li><a class="dropdown-item" href="#">4</a></li>
+          <li><a class="dropdown-item" href="#">5</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="  bd-highlight ">
+      <div class="dropdown ">
+          <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Select Course
+          </button>
+        <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="dropdownMenuButton1">
+          
+          <li><a class="dropdown-item" href="#">BCA</a></li>
+          <li><a class="dropdown-item" href="#">MCA</a></li>
+          <li><a class="dropdown-item" href="#">B.TECH</a></li>
+          <li><a class="dropdown-item" href="#">M.TECH</a></li>
+          <li><a class="dropdown-item" href="#">BBA</a></li>
+          <li><a class="dropdown-item" href="#">MBA</a></li>
+          <li><a class="dropdown-item" href="#">B.A</a></li>
+          <li><a class="dropdown-item" href="#">M.A</a></li>
+          <li><a class="dropdown-item" href="#">B.E</a></li>
+          <li><a class="dropdown-item" href="#">B.ED</a></li>
+          <li><a class="dropdown-item" href="#">L.L.B</a></li>
+          <li><a class="dropdown-item" href="#">B.A.L.L.B</a></li>
+          <li><a class="dropdown-item" href="#">B.SC</a></li>
+          <li><a class="dropdown-item" href="#">M.Sc</a></li>
+          <li><a class="dropdown-item" href="#">B.Com </a></li>
+          <li><a class="dropdown-item" href="#">M.Com</a></li>
+          <li><a class="dropdown-item" href="#">BJMC</a></li>
+          <li><a class="dropdown-item" href="#">B.Pharma</a></li>
+          <li><a class="dropdown-item" href="#">M.Pharma</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mx-3 bd-highlight">
+      <div class=" bd-highlight ">
+        <form>
+          <input class="form-control " type="search" placeholder="dd/mm/yyyy" aria-label="Search">
+        </form>
+      </div>
+    </div>
+    <div class="p-2 bd-highlight">Date:</div>
+
+  </div>
+
+  <nav class=" navbar navbar-expand-lg navbar-light  mt-3 py-1">
+    <div class="container ">
+      <div class="container-fluid d-inline-block bg-info">
+        <figure class="text-center ">
+          <blockquote class="blockquote ">
+            <h2>Attendance Report</h2>
+          </blockquote>
+        </figure>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container border my-5">
+    <figure class="text-center ">
+      <blockquote class="blockquote my-5">
+        <h2>No record found !</h2>
+      </blockquote>
+    </figure>
+  </div>
+
+  <div class="d-flex justify-content-start ">
+
+    <div class="p-2 my-2 bd-highlight ">
+      <button class="btn btn-outline-primary fs-5 mx-5 fw-bold" onclick="window.print()" type="view">
+        <i class="fa fa-print"></i> Print
+      </button>
+    </div>
+
+  </div>
+  </div>
+
+  <nav class=" navbar navbar-expand-lg navbar-light  bg-light mt-3 py-1">
+    <div class="container ">
+      <div class="container-fluid d-block">
+        <!-- <a class="navbar-brand d-flex justify-content-center" href="#">Iamr Group Of Institutions <br>
+            <hr> &nbsp; &copy; 2020 Private, corp </a>  -->
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </nav>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheet link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Font icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Courses </title>
+</head>
+
+<body>
+
+    <div class="container-fluid bg-primary">
+        <div class="container ">
+            <p class="fs-1 text-center text-light"> Welcome to Attendence Mgt System </p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light  bg-primary bg-opacity-25">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand px-2 fs-5.5 fw-bolder" href="#">IAMR Group Of Institutions</a>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                <ul class="navbar-nav nav-pills me-auto mb-1 mb-lg-0  ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-dark fs-5 fw-bolder " aria-current="page" href="Home.html">
+                            <i class="fa fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder " href="student.html"> <i class="fa fa-users"></i>
+                            Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder " href="Attendence.html"> <i
+                                class="fa fa-pencil-square-o"></i>
+                            Attendence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-5 fw-bolder active" href="course.html"> <i
+                                class="fa fa-book"></i>
+                            Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder" href="department.html"> <i
+                                class="fa fa-building"></i>
+                            Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder" href="users.html"> <i class="fa fa-user"></i>
+                            Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder" href="Report.html"> <i
+                                class="fa fa-exclamation-circle"></i>
+                            Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-5 fw-bolder" href="index.html"> <i class="fa fa-sign-out"></i>
+                            Logout</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 btn-outline-info " type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- table header section -->
+
+    <div class="container-fluid border my-4 ">
+        <table class="table mt-0 mb-4 ">
+            <div class="d-flex justify-content-start my-4">
+                <!-- item-1 -->
+                <div class="p-2 bd-highlight w-50">
+                    <form>
+                        <input class="form-control " type="search" placeholder="Search Course" aria-label="Search">
+                    </form>
+                </div>
+                <!-- item-2 -->
+                <div class="p-2 bd-highlight">
+                    <button class="btn btn-outline-success" type="submit">Search </button>
+                </div>
+            </div>
+
+            <!-- table body section -->
+
+            <thead class="table-dark fs-5 px-2 text-center border text-light fw-bold">
+                <tr>
+                    <td> Course ID</td>
+                    <td> Course</td>
+                    <td> Description of Course</td>
+                    <td> Duration</td>
+                    <td> Department </td>
+                    <td> Action</td>
+
+                </tr>
+            </thead>
+            <tbody class="border text-center ">
+
+
+                <tr>
+                    <td>101</td>
+                    <td>BCA</td>
+                    <td>BACHELOR OF COMPUTER SCIENCE</td>
+                    <td>3-YEAR</td>
+                    <td>COMPUTER SCIENCE / I.T</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>201</td>
+                    <td>MCA</td>
+                    <td>MASTERS IN COMPUTER SCIENCE</td>
+                    <td>2-YEAR</td>
+                    <td>COMPUTER SCIENCE / I.T</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>B.TECH</td>
+                    <td>BACHELOR OF TECHNOLOGY</td>
+                    <td>4-YEAR</td>
+                    <td>COMPUTER SCIENCE / I.T</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>401</td>
+                    <td>M.TECH</td>
+                    <td>MASTERS IN TECHNOLOGY</td>
+                    <td>2-YEAR</td>
+                    <td>COMPUTER SCIENCE / I.T</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>501</td>
+                    <td>BBA</td>
+                    <td>BACHELOR OF BUSINESS ADMINISTRATION</td>
+                    <td>3-YEAR</td>
+                    <td>MANAGEMENT</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>601</td>
+                    <td>MBA</td>
+                    <td>MASTERS IN BUSINESS ADMINISTRATION</td>
+                    <td>2-YEAR</td>
+                    <td>MANAGEMENT</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>701</td>
+                    <td>L.L.B</td>
+                    <td>BACHELOR OF LAW</td>
+                    <td>3-YEAR</td>
+                    <td>LAW</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>801</td>
+                    <td>B.A.L.L.B</td>
+                    <td>BACHELOR OF ARTS AND INTEGRATED OF LAW</td>
+                    <td>5-YEAR</td>
+                    <td>LAW</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>901</td>
+                    <td>BJMC</td>
+                    <td>BACHELOR OF JOURNALISM AND MASS COMMUNICATION</td>
+                    <td>3-YEAR</td>
+                    <td>NEWS REPORTING</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>1001</td>
+                    <td>B.SC</td>
+                    <td>BACHELOR OF SCIENCE</td>
+                    <td>3-YEAR</td>
+                    <td>SCIENCE</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1101</td>
+                    <td>M.SC</td>
+                    <td>MASTERS IN SCIENCE</td>
+                    <td>2-YEAR</td>
+                    <td>SCIENCE</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1201</td>
+                    <td>POLYTECHNIC</td>
+                    <td>DIPLOMA IN TECHNICAL FIELD</td>
+                    <td>3-YEAR</td>
+                    <td>TECHNICAL</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1301</td>
+                    <td>B.E</td>
+                    <td>BACHELOR OF ENGINEERING</td>
+                    <td>3-YEAR</td>
+                    <td>TECHNICAL</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1401</td>
+                    <td>B.ED</td>
+                    <td>BACHELOR OF EDUCATION</td>
+                    <td>3-YEAR</td>
+                    <td>TEACHING</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1501</td>
+                    <td>B.A</td>
+                    <td>BACHELOR OF ARTS</td>
+                    <td>3-YEAR</td>
+                    <td>DESIGNING</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1601</td>
+                    <td>M.A</td>
+                    <td>MASTERS IN ARTS</td>
+                    <td>2-YEAR</td>
+                    <td>DESIGNING</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1701</td>
+                    <td>B.COM</td>
+                    <td>BACHELOR OF COMMERCE</td>
+                    <td>3-YEAR</td>
+                    <td>ACCOUNTS</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>1801</td>
+                    <td>M.COM</td>
+                    <td>MASTERS IN COMMERCE</td>
+                    <td>2-YEAR</td>
+                    <td>ACCOUNTS</td>
+                    <td>
+                        <button class="btn btn-secondary" type="edit">
+                            <i class="fa fa-pencil-square-o"></i>
+                            Edit</button>
+                        <button class="btn btn-danger" type="view">
+                            <i class="fa fa-trash-o"></i>
+                            Delete</button>
+                    </td>
+                </tr>
+
+            </tbody>
+    </div>
+    </table>
+
+    <!-- table footer secion -->
+
+    <div class="d-flex justify-content-between ">
+
+        <div class="p-2 my-2 bd-highlight ">
+            <button class="btn btn-primary fs-5 fw-bold" type="view">
+                <i class="fa fa-plus-circle"></i>
+                Add New</button>
+        </div>
+        <div class="p-2 bd-highlight">
+            <ul class="pagination ">
+                <li class="page-item disabled">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+        </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+
+    <nav class=" navbar navbar-expand-lg navbar-light  bg-light mt-3 py-1">
+        <div class="container ">
+            <div class="container-fluid d-block">
+                <!-- <a class="navbar-brand d-flex justify-content-center" href="#">Iamr Group Of Institutions <br>
+            <hr> &nbsp; &copy; 2020 Private, corp </a>  -->
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </nav>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
